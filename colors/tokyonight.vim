@@ -31,10 +31,11 @@ let s:configuration.current_word = get(g:, 'tokyonight_current_word', get(g:, 't
 " Palette: {{{
 "
 if s:configuration.style ==# 'night'
+  " stormに合わせてbg1, greyだけ軽く変更したけど確認はしていない
   let s:palette = {
         \ 'black':      ['#06080a',   '237',  'DarkGrey'],
         \ 'bg0':        ['#1a1b26',   '235',  'Black'],
-        \ 'bg1':        ['#232433',   '236',  'DarkGrey'],
+        \ 'bg1':        ['#2a2b3d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2a2b3d',   '236',  'DarkGrey'],
         \ 'bg3':        ['#32344a',   '237',  'DarkGrey'],
         \ 'bg4':        ['#3b3d57',   '237',  'Grey'],
@@ -51,14 +52,17 @@ if s:configuration.style ==# 'night'
         \ 'green':      ['#9ECE6A',   '107',  'Green'],
         \ 'blue':       ['#7AA2F7',   '110',  'Blue'],
         \ 'purple':     ['#ad8ee6',   '176',  'Magenta'],
-        \ 'grey':       ['#444B6A',   '246',  'LightGrey'],
+        \ 'grey':       ['#636d9a',   '246',  'LightGrey'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ }
 elseif s:configuration.style ==# 'storm'
+  " black: vim-test/vim-testでテストを実行した時に実行したケースが黒で表示されてしまい非常に見づらいので白っぽい色に変更
+  " bg1: petertriho/nvim-scrollbarの色が暗くて見づらいので明るめに変更
+  " grey: コメントの色が暗くて見づらいので明るめの色に変更
   let s:palette = {
-        \ 'black':      ['#06080a',   '237',  'DarkGrey'],
+        \ 'black':      ['#a9b1d6',   '237',  'DarkGrey'],
         \ 'bg0':        ['#24283b',   '235',  'Black'],
-        \ 'bg1':        ['#282d42',   '236',  'DarkGrey'],
+        \ 'bg1':        ['#2f344d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2f344d',   '236',  'DarkGrey'],
         \ 'bg3':        ['#333954',   '237',  'DarkGrey'],
         \ 'bg4':        ['#3a405e',   '237',  'Grey'],
@@ -75,7 +79,7 @@ elseif s:configuration.style ==# 'storm'
         \ 'green':      ['#9ECE6A',   '107',  'Green'],
         \ 'blue':       ['#7AA2F7',   '110',  'Blue'],
         \ 'purple':     ['#ad8ee6',   '176',  'Magenta'],
-        \ 'grey':       ['#444B6A',   '246',  'LightGrey'],
+        \ 'grey':       ['#636d9a',   '246',  'LightGrey'],
         \ 'none':       ['NONE',      'NONE', 'NONE']
         \ }
 endif
