@@ -31,9 +31,9 @@ let s:configuration.current_word = get(g:, 'tokyonight_current_word', get(g:, 't
 " Palette: {{{
 "
 if s:configuration.style ==# 'night'
-  " stormに合わせてbg1, greyだけ軽く変更したけど確認はしていない
+  " stormに合わせてblack, bg1, greyだけ軽く変更したけど確認はしていない
   let s:palette = {
-        \ 'black':      ['#06080a',   '237',  'DarkGrey'],
+        \ 'black':      ['#a9b1d6',   '237',  'DarkGrey'],
         \ 'bg0':        ['#1a1b26',   '235',  'Black'],
         \ 'bg1':        ['#2a2b3d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2a2b3d',   '236',  'DarkGrey'],
