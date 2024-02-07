@@ -33,7 +33,7 @@ let s:configuration.current_word = get(g:, 'tokyonight_current_word', get(g:, 't
 if s:configuration.style ==# 'night'
   " stormに合わせてblack, bg1, greyだけ軽く変更したけど確認はしていない
   let s:palette = {
-        \ 'black':      ['#a9b1d6',   '237',  'DarkGrey'],
+        \ 'black':      ['#636d9a',   '246',  'LightGrey'],
         \ 'bg0':        ['#1a1b26',   '235',  'Black'],
         \ 'bg1':        ['#2a2b3d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2a2b3d',   '236',  'DarkGrey'],
@@ -59,8 +59,12 @@ elseif s:configuration.style ==# 'storm'
   " black: vim-test/vim-testでテストを実行した時に実行したケースが黒で表示されてしまい非常に見づらいので白っぽい色に変更
   " bg1: petertriho/nvim-scrollbarの色が暗くて見づらいので明るめに変更
   " grey: コメントの色が暗くて見づらいので明るめの色に変更
+  " #a9b1d6 (いま)
+  " #333954
+  " #3a405e
+  " #636d9a
   let s:palette = {
-        \ 'black':      ['#a9b1d6',   '237',  'DarkGrey'],
+        \ 'black':      ['#636d9a',   '246',  'LightGrey'],
         \ 'bg0':        ['#24283b',   '235',  'Black'],
         \ 'bg1':        ['#2f344d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2f344d',   '236',  'DarkGrey'],
