@@ -59,8 +59,12 @@ elseif s:configuration.style ==# 'storm'
   " black: vim-test/vim-testでテストを実行した時に実行したケースが黒で表示されてしまい非常に見づらいので白っぽい色に変更
   " bg1: petertriho/nvim-scrollbarの色が暗くて見づらいので明るめに変更
   " grey: コメントの色が暗くて見づらいので明るめの色に変更
+  " #a9b1d6 (いま)
+  " #333954
+  " #3a405e
+  " #636d9a
   let s:palette = {
-        \ 'black':      ['#a9b1d6',   '237',  'DarkGrey'],
+        \ 'black':      ['#a9b1d6',   '246',  'LightGrey'],
         \ 'bg0':        ['#24283b',   '235',  'Black'],
         \ 'bg1':        ['#2f344d',   '236',  'DarkGrey'],
         \ 'bg2':        ['#2f344d',   '236',  'DarkGrey'],
