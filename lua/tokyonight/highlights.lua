@@ -149,9 +149,9 @@ function M.setup(p, config)
   hl(0, "healthWarning", { link = "Yellow" })
 
   -- LSP
-  hl(0, "LspReferenceText", { bg = p.bg3 })
-  hl(0, "LspReferenceRead", { bg = p.bg3 })
-  hl(0, "LspReferenceWrite", { bg = p.bg3 })
+  hl(0, "LspReferenceText", { underline = true })
+  hl(0, "LspReferenceRead", { underline = true })
+  hl(0, "LspReferenceWrite", { underline = true })
   hl(0, "LspSignatureActiveParameter", { fg = p.orange, bold = true })
   hl(0, "LspInfoBorder", { fg = p.grey })
 
@@ -295,9 +295,9 @@ function M.setup(p, config)
   hl(0, "IblScope", { fg = p.grey })
 
   -- vim-illuminate
-  hl(0, "IlluminatedWordText", { bg = p.bg3 })
-  hl(0, "IlluminatedWordRead", { bg = p.bg3 })
-  hl(0, "IlluminatedWordWrite", { bg = p.bg3 })
+  hl(0, "IlluminatedWordText", { underline = true })
+  hl(0, "IlluminatedWordRead", { underline = true })
+  hl(0, "IlluminatedWordWrite", { underline = true })
 
   -- lazy.nvim
   hl(0, "LazyH1", { fg = p.bg0, bg = p.green, bold = true })
