@@ -1,0 +1,51 @@
+local M = {}
+
+M.night = {
+  black = "#636d9a",
+  bg0 = "#1a1b26",
+  bg1 = "#2a2b3d",
+  bg2 = "#2a2b3d",
+  bg3 = "#32344a",
+  bg4 = "#3b3d57",
+  bg_red = "#ff7a93",
+  diff_red = "#803d49",
+  bg_green = "#b9f27c",
+  diff_green = "#618041",
+  bg_blue = "#7da6ff",
+  diff_blue = "#3e5380",
+  fg = "#a9b1d6",
+  red = "#F7768E",
+  orange = "#FF9E64",
+  yellow = "#E0AF68",
+  green = "#9ECE6A",
+  blue = "#7AA2F7",
+  purple = "#ad8ee6",
+  grey = "#636d9a",
+  none = "NONE",
+}
+
+M.storm = {
+  black = "#636d9a",
+  bg0 = "#24283b",
+  bg1 = "#2f344d",
+  bg2 = "#2f344d",
+  bg3 = "#333954",
+  bg4 = "#3a405e",
+  bg_red = "#ff7a93",
+  diff_red = "#803d49",
+  bg_green = "#b9f27c",
+  diff_green = "#618041",
+  bg_blue = "#7da6ff",
+  diff_blue = "#3e5380",
+  fg = "#a9b1d6",
+  red = "#F7768E",
+  orange = "#FF9E64",
+  yellow = "#E0AF68",
+  green = "#9ECE6A",
+  blue = "#7AA2F7",
+  purple = "#ad8ee6",
+  grey = "#636d9a",
+  none = "NONE",
+}
+
+return M
